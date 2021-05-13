@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.section-left-col
+{
+    background: #5200ff;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.section-left-col:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.jpg');
+    background-size: cover;
+    background-position: 100%;
+    opacity: .22;
+}
+
+.content{
+    position: relative; /* Text is blur to avoid that we add this class */
+}
+
+.section-left-col, .section-right-col{
+    padding: 6.75rem 8vw; /* 108 px to rem : 108/16 = 6.75rem */
+}
